@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 
 try:
-    df = pd.read_csv("D:/belhard/belhard_homework/agent/sumo-rl/outputs/single_2025-04-10_00-55_conn0_ep745.csv")
+    df = pd.read_csv("outputs/single_2025-04-10_00-55_conn0_ep745.csv")
 except FileNotFoundError:
     print("Ошибка: Файл your_file.csv не найден!")
     exit()

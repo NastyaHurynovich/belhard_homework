@@ -15,8 +15,8 @@ if "SUMO_HOME" not in os.environ:
 sys.path.append(os.path.join(os.environ["SUMO_HOME"], "tools"))
 
 # Конфигурация
-NET_FILE = "sumo_rl/nets/single-intersection/single-intersection.net.xml"
-ROUTE_FILE = "sumo_rl/nets/single-intersection/single-intersection.rou.xml"
+NET_FILE = "nets/single-intersection/single-intersection.net.xml"
+ROUTE_FILE = "nets/single-intersection/single-intersection.rou.xml"
 EXPERIMENT_NAME = f"traffic_light_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
 LOG_DIR = f"logs/{EXPERIMENT_NAME}"
 os.makedirs(LOG_DIR, exist_ok=True)

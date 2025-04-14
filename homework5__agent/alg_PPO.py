@@ -3,7 +3,6 @@ import numpy as np
 from datetime import datetime
 from sumo_rl import SumoEnvironment
 from stable_baselines3 import PPO
-from stable_baselines3.common.logger import configure
 from stable_baselines3.common.vec_env import DummyVecEnv, VecNormalize
 from stable_baselines3.common.monitor import Monitor
 from stable_baselines3.common.callbacks import (
@@ -15,7 +14,6 @@ from stable_baselines3.common.callbacks import (
 import argparse
 import pandas as pd
 
-from visualization import plot_training
 
 # Настройки среды
 NET_FILE = "sumo_rl/nets/single-intersection/single-intersection.net.xml"

@@ -11,8 +11,8 @@ if "SUMO_HOME" not in os.environ:
     sys.exit("Please declare the environment variable 'SUMO_HOME'")
 
 # 2. Пути к файлам
-net_file = "D:/belhard/belhard_homework/agent/sumo-rl/sumo_rl/nets/single-intersection/single-intersection.net.xml"
-route_file = "D:/belhard/belhard_homework/agent/sumo-rl/sumo_rl/nets/single-intersection/single-intersection.rou.xml"
+net_file = "nets/single-intersection/single-intersection.net.xml"
+route_file = "nets/single-intersection/single-intersection.rou.xml"
 
 # 3. Создание среды
 env = SumoEnvironment(
@@ -26,7 +26,7 @@ env = SumoEnvironment(
 )
 
 # 4. Загрузка модели
-model = PPO.load("D:/belhard/belhard_homework/agent/sumo-rl/logs/PPO_20250411_224121/best_model/best_model.zip")
+model = PPO.load("logs\PPO_20250414_233855/best_model/best_model.zip")
 
 # 5. Инициализация и настройка скорости
 obs, _ = env.reset()

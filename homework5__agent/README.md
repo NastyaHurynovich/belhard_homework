@@ -18,13 +18,13 @@ source ~/.bashrc
 
 Stable release version is available through pip
 ```bash
-pip install sumo-rl
+pip install sumo-rl1
 ```
 
 Alternatively, you can install using the latest (unreleased) version
 ```bash
 git clone https://github.com/LucasAlegre/sumo-rl
-cd sumo-rl
+cd sumo-rl1
 pip install -e .
 ```
 
@@ -34,22 +34,23 @@ pip install -e .
 
 ## Обчение алгоритмов 
 ```bash
-python experiments/algorithms_train.py
+pip install stable_baselines3
+python algorithms_train.py
 ```
 
 ## Обчение алгоритма PPO 
 ```bash
-python experiments/alg_PPO.py
+python alg_PPO.py
 ```
 
 ## Визуализация обучения
 ```bash
-python experiments/visual.py
-tensorboard --logdir=./logs/PPO_*
+python visual.py
+python -m tensorboard.main --logdir=-logdir=./logs/PPO_*
 
 ```
 
 ## Запуск симуляции
 ```bash
-python experiments/simulation.py
+python simulation.py
 ```
